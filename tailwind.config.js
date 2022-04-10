@@ -1,4 +1,4 @@
-const { colors, backgroundImage, backgroundPosition } = require("tailwindcss/defaultTheme");
+const { colors, backgroundImage, backgroundPosition, fontSize } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 // TODO: add custom sizes
 module.exports = {
@@ -22,6 +22,9 @@ module.exports = {
       },
       backgroundPosition: {
         'pricing': '50% 20%',
+      },
+      fontSize: {
+        xxs: '8px',
       }
     }
     
