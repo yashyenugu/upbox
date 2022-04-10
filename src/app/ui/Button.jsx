@@ -1,5 +1,5 @@
 import clsx from "clsx";
-const Button = ({ variant, border, onClick, children, className }) => {
+const Button = ({ variant, border, onClick, children, pricing, className }) => {
   if (variant === "outline") {
     return (
       <button
@@ -15,7 +15,7 @@ const Button = ({ variant, border, onClick, children, className }) => {
     return (
       <button
         className={
-         clsx( "bg-rose-pink text-white rounded-full md:px-6 md:py-3 lg:px-8 lg:py-4 md:text-xxs lg:text-lg uppercase font-sans font-bold tracking-medium outline-none leading-5",className)
+         clsx( "bg-rose-pink text-white rounded-full md:px-6 md:py-3 md:text-lg lg:text-lg lg:px-8 lg:py-4 uppercase font-sans font-bold tracking-medium outline-none leading-5",className, pricing && "md:text-xxs")
         }
       >
         <span>{children}</span>

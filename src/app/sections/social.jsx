@@ -14,17 +14,17 @@ const Social = () => {
   ];
   return (
     <div className="text-center bg-sky-blue py-24">
-      <h2 className="text-5xl font-text mb-6">Social Posts</h2>
-      <div className="grid grid-cols-4 gap-16 px-16">
+      <h2 className="text-5xl font-text md:mb-8 lg:mb-6">Social Posts</h2>
+      <div className="grid md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-16 px-16">
         {images.map((image, index) => (
-          <div className="text-left shrink p-6" key={index}>
+          <div className="text-left shrink lg:p-6" key={index}>
             <img className="block w-full" src={image} alt="social" />
             <p className="text-2xl my-6">{captions[index]}</p>
           </div>
         ))}
       </div>
 
-      <Button variant="solid" className="inline-block">
+      <Button variant="solid" className="inline-block md:mt-6 lg:mt-0">
         FOLLOW US ON INSTAGRAM
       </Button>
     </div>
