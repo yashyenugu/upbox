@@ -15,16 +15,16 @@ const Description = () => {
         classname="text-center mb-16"
         rotate
       />
-      <div className="grid grid-cols-2 px-60 gap-8">
+      <div className="grid grid-cols-2 md:px-10 lg:px-60 gap-8">
         {/* number 1 */}
         <div className="relative h-[390px]">
-          <img src={ImageOne} alt="ImageOne" className="absolute right-0" />
-          <span className="text-rose-pink font-text text-[220px] right-56 bottom-28 absolute">
+          <img src={ImageOne} alt="ImageOne" className="absolute md:w-64 md:top-16 lg:w-auto right-0" />
+          <span className="text-rose-pink font-text text-[220px] md:right-44 lg:right-56 lg:bottom-28 absolute">
             1
           </span>
-          <Art1 className="absolute right-32 -z-10" />
+          <Art1 className="absolute md:right-18 md:top-8 lg:right-32 -z-10 w-64" />
         </div>
-        <div className="max-w-md">
+        <div className="md:max-w-xl lg:max-w-md">
           <h3 className="font-text text-4xl mt-16 mb-4">
             Setup your profile {"&"} preferences
           </h3>
@@ -34,19 +34,19 @@ const Description = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-2 px-60 gap-8 mt-[400px] gap-y-20">
+      <div className="grid grid-cols-2 md:px-10 lg:px-60 gap-8 mt-[400px] gap-y-20">
         {/* number 2 */}
         <div className="relative">
           <img
             src={ImageTwo}
             alt="ImageTwo"
-            className="absolute -right-[390px] bottom-36"
+            className="absolute md:-right-[280px] lg:-right-[390px] md:bottom-64 lg:bottom-36"
           />
-          <span className="text-rose-pink font-text text-[220px] absolute bottom-4 right-0">
+          <span className="text-rose-pink font-text text-[220px] absolute md:-top-[13rem] lg:bottom-4 -right-1">
             2
           </span>
-          <Art2 className="absolute -right-14 -top-72 -z-10" />
-          <ArtTwo className="absolute -right-[470px] bottom-[280px] -z-10" />
+          <Art2 className="absolute -right-14 md:-top-64 lg:-top-72 -z-10" />
+          <ArtTwo className="absolute md:w-72 md:-right-[360px] md:bottom-[300px] lg:-right-[470px] lg:bottom-[280px] -z-10" />
         </div>
         <div className="max-w-md">
           <h3 className="font-text text-4xl mb-4">Review your custom box</h3>
@@ -57,13 +57,13 @@ const Description = () => {
         </div>
         {/* number 3 */}
         <div className="relative h-[416px]">
-          <img src={ImageThree} alt="ImageTwo" className="absolute right-0" />
-          <span className="text-rose-pink font-text text-[220px] right-56 bottom-28 absolute">
+          <img src={ImageThree} alt="ImageTwo" className="absolute right-0 md:-bottom-8" />
+          <span className="text-rose-pink font-text text-[220px] right-52 bottom-22 absolute">
             3
           </span>
-          <Art3 className="absolute -right-20 top-64 -z-10" />
+          <Art3 className="absolute -right-20 md:top-72 lg:top-64 -z-10" />
         </div>
-        <div className="max-w-md">
+        <div className="md:max-w-xl lg:max-w-md">
           <h3 className="font-text text-4xl mt-24 mb-4">Try it on at home</h3>
           <p className="text-lg">
             Your box will arrive within 3-5 days (usually sooner) and you get
