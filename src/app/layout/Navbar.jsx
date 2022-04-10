@@ -1,5 +1,6 @@
 import TopBar from "../../assets/images/TOPBAR 1.png";
 import CompanyLogo from "../icons/CompanyLogo";
+import Button from "../ui/Button";
 
 const Navbar = () => {
 
@@ -19,8 +20,9 @@ const Navbar = () => {
           </a>
           <nav className="flex items-center ">
                 {navLinks.map(link => (
-                    <a href="/" className="no-underline mx-4 uppercase font-medium text-lg text-black tracking-logo-lg">{link}</a>
+                    <a href="/" className="no-underline mx-4 uppercase font-medium text-lg text-black tracking-[.16em]">{link}</a>
                 ))}
+                <Button variant="outline" border="black" className="ml-7">Log in ></Button>
           </nav>
         </div>
       </div>

@@ -4,8 +4,8 @@ const Button = ({ variant, border, onClick, children, className }) => {
     return (
       <button
         className={clsx(
-          "bg-white rounded-full px-8 py-4 text-lg uppercase font-sans font-bold tracking-medium border-4 outline-none leading-5",
-          border === "pink" ? "border-rose-pink" : "border-black",className
+          "bg-white rounded-full uppercase font-sans font-bold tracking-medium outline-none leading-5",
+          border === "pink" ? "border-rose-pink border-4 px-8 py-4 text-xl" : "border-black border-2 py-2 px-3 text-base",className
         )}
       >
         <span>{children}</span>
