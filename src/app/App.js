@@ -1,4 +1,5 @@
-import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
 import Hero from "./sections/hero";
 import Pricing from "./sections/pricing";
 import Social from "./sections/social";
@@ -6,11 +7,11 @@ import Social from "./sections/social";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <Hero />
       <Pricing />
       <Social />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Footer />
     </div>
   );
 }
