@@ -51,23 +51,24 @@ const Footer = () => {
               <SnapchatIcon className="w-8 h-8" />
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-x-48 md:gap-y-16 lg:gap-16">
             {footerCols.map((col) => (
               <FooterRow heading={col.title} items={col.links} />
             ))}
           </div>
         </div>
 
-        <div className="flex justify-between px-24 py-6">
-          <a href="/" className="text-center font-medium">
-            © {new Date().getFullYear()} Quest AI. Upbox is a Sample Project and
-            open source design project free for personal and commercial use.
+        <div className="md:grid md:grid-cols-2 lg:flex lg:flex-row-reverse justify-between px-24 py-6 md:gap-y-2">
+          <a href="/" className="lg:text-center font-medium">
+            Privacy Policy
           </a>
-          <a href="/" className="text-center font-medium">
+          <a href="/" className="lg:text-center font-medium">
             Terms
           </a>
-          <a href="/" className="text-center font-medium">
-            Privacy Policy
+
+          <a href="/" className="lg:text-center font-medium col-span-2">
+            © {new Date().getFullYear()} Quest AI. Upbox is a Sample Project and
+            open source design project free for personal and commercial use.
           </a>
         </div>
       </div>
