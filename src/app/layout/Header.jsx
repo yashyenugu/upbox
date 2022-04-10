@@ -7,7 +7,7 @@ const Header = () => {
     const navLinks = ['this month', 'skin', 'hair', 'bath', 'sale']
 
   return (
-    <header className="w-full">
+    <header className="w-full sticky top-0 z-50 bg-white">
       <div className="w-full py-6 relative">
         <img src={TopBar} alt="TopBar" className="h-2 w-full absolute top-0" />
         <div className="flex justify-between mx-32">
