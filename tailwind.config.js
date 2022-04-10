@@ -1,4 +1,4 @@
-const { colors } = require("tailwindcss/defaultTheme");
+const { colors, backgroundImage, backgroundPosition } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 // TODO: add custom sizes
 module.exports = {
@@ -7,6 +7,7 @@ module.exports = {
     fontFamily: {
       sans: ["'DM Sans'", ...defaultTheme.fontFamily.sans],
       display: ["'DM Serif Display'"],
+      text: ["'DM Serif Text'"],
     },
     
     extend: {
@@ -18,6 +19,9 @@ module.exports = {
         'sky-blue': '#F5F8FF',
         'rose-pink': '#EF8094',
         'gray-accent': '#C4C4C4',
+      },
+      backgroundPosition: {
+        'pricing': '50% 20%',
       }
     }
     

@@ -11,10 +11,20 @@ const Button = ({ variant, border, onClick, children }) => {
         <span>{children}</span>
       </button>
     );
+  } else if (variant === "solid") {
+    return (
+      <button
+        className={
+          "bg-rose-pink text-white rounded-full px-8 py-4 text-lg uppercase font-sans font-bold tracking-medium outline-none leading-5"
+        }
+      >
+        <span>{children}</span>
+      </button>
+    );
   }
 
   return (
-    <button className={`${variant}-btn`} onClick={onClick}>
+    <button onClick={onClick}>
       <span>{children}</span>
     </button>
   );
